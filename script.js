@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('overlay');
     const cancelBtn = document.getElementById('cancel-btn');
 
-    // Show popup after 30 seconds
+    // Show popup after 1.5 seconds
     setTimeout(() => {
         popup.classList.add('active');
         overlay.classList.add('active');
