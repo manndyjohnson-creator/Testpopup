@@ -5,15 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Show popup after 1.5 seconds
     setTimeout(() => {
-        popup.classList.add('active');
-        overlay.classList.add('active');
-    }, 30000);
+        if (popup && overlay) {
+            popup.classList.add('active');
+            overlay.classList.add('active');
+        }
+    }, 1500);
 
-    // Allow user to close it via cancel button
+    // Make the cancel button call the number instead of closing
     if (cancelBtn) {
         cancelBtn.addEventListener('click', () => {
-            popup.classList.remove('active');
-            overlay.classList.remove('active');
+            window.location.href = 'tel:+12052771332';
         });
     }
 });
